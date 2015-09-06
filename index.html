@@ -1,30 +1,240 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="content" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge ; charset=utf-8">
+    <meta name="viewport" content="width=device-width, intitial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/lightbox.css" rel="stylesheet"  type="text/css">
+    <link href="css/makani.css" rel="stylesheet" type="text/css"> 
+    <script src="js/jquery.js"></script>
+    <script src="js/galleria-1.4.2.min.js"></script>
+    <script src="js/galleria.history.min.js"></script>
     <title>Love Life - Makani</title>
 </head>
 
 <body>
-    <h1 align="center">Makani's<h1>
-    <h3 align="center"><i>Love is painful, but more charming ... </i></h3>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <div align="center">
-        <a href="images/love/1_Love_better.jpg"><img src="thumbnails/love/1_Love_better_sm.jpg" name="img1" alt="Love_Better"></a>
-        <a href="images/love/5_With_you.jpg"><img src="thumbnails/love/5_With_you_sm.jpg" alt="With_you"></a>
-        <a href="images/love/3_Love_no_limit.jpg"><img src="thumbnails/love/3_Love_no_limit_sm.jpg" alt="Love_no_limit"></a>
-        <a href="images/love/4_The_same_goal.jpg"><img src="thumbnails/love/4_The_same_goal_sm.jpg" alt="The_same_goal"></a>
-        <a href="images/love/2_Happiness_hide.jpg"><img src="thumbnails/love/2_Happiness_hide_sm.jpg" alt="Happiness_hide"></a>
-    </div>
-    <hr>
-    <br>	
-    <br>
-    <br>
-     <h4 align="center">一個喜歡用畫與文字看世界的女生</h4>
-</body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="navbar-brand" href="index.html">Makani's Blog</a>
+            </div>
+            <div id="mynavbar-content">
+                <ul>
+                    <li><a href="#jumbo">Home</a></li>
+                    <li><a href="#favor">My Favorite</a></li>
+                    <li class="dropdown">
+                        <a id="dLabel" data-toggle="dropdown" href="#" aria-haspopup="true" role="button" aria-expanded="false">About Me
+                        <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                            <li><a href="#abou">Self-Intro</a></li>
+                            <li><a href="#latest">Latest Works</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+<div class="container-fluid" align="center" >
+
+    <div id="jumbo" class="jumbotron">
+        <div class="header" align="center" font style="text-shadow:1px 1px 2px #cccccc;">
+            <h1>Makani's Blog</h1>
+            <h3><i>Love, what is painful but fascinating that we can't lose. </i></h3>
+            <br>
+            <h2><a href="#favor">Welcome</a></h2>
+        </div>
+        <video id="bgvid" autoplay loop controls>
+            <source src="images/video1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+<div id="favor"><br><br><br></div>
+
+      <h2>Favorite Paintings </h2><h3>Marc Chagall</h3><br>
+
+        <div id="galleria">
+            <a href="images/slides/slide2.jpg">
+                <img src="images/slides/slide2.jpg" alt="slide2">  
+            </a>
+            <a href="images/slides/slide3.jpg">
+                <img src="images/slides/slide3.jpg" alt="slide2">  
+            </a>
+            <a href="images/slides/slide4.jpg">
+                <img src="images/slides/slide4.jpg" alt="slide2">  
+            </a>
+            <a href="images/slides/slide5.jpg">
+                <img src="images/slides/slide5.jpg" alt="slide2">  
+            </a>
+            <a href="images/slides/slide6.jpg">
+                <img src="images/slides/slide6.jpg" alt="slide2">  
+            </a>
+            <a href="images/slides/slide7.jpg">
+                <img src="images/slides/slide7.jpg" alt="slide2">  
+            </a>
+            <a href="images/slides/slide8.jpg">
+                <img src="images/slides/slide8.jpg" alt="slide2">  
+            </a>
+            <a href="images/slides/slide9.jpg">
+                <img src="images/slides/slide9.jpg" alt="slide2">  
+            </a>
+            <a href="images/slides/slide10.jpg">
+                <img src="images/slides/slide10.jpg" alt="slide2">  
+            </a>
+            <a href="images/slides/slide11.jpg">
+                <img src="images/slides/slide11.jpg" alt="slide2">  
+            </a>
+
+        </div>
+  <br>
+  <br>
+ 
+    <div id="abou"><br><br><br><br>
+    <h2>About Me </h2><h3>A girl who likes to describe the world with paintings and words.</h3><br><br></div>
+
+    <div class="card">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+                <a href="images/love/1_Love_better.jpg" data-lightbox="image-1" data-title="Love makes people better"><img src="thumbnails/love/1_Love_better_sm.jpg" name="image-1" alt="Love_Better"></a>
+                <div class="caption">
+                   <h3>Love makes people better</h3>
+                   <p>為了你愛的人<br>你會想要變更好<br>真正愛你的人<br>則會讓你變更好</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+                <a href="images/love/3_Love_no_limit.jpg" data-lightbox="image-3" data-title="Love No Limit"><img src="thumbnails/love/3_Love_no_limit_sm.jpg" name="image-3" alt="Love_no_limit"></a>
+                <div class="caption">
+                   <h3>Love No Limit</h3>
+                  <p>愛難以用任何具體形像去解釋<br>應當是超乎時間、空間、年齡與性別的<br></p>
+                  <p>-響應並紀念2015年6月26日美國聯邦最高法院歷史性判決<全美國同性婚姻合法化>-</p>
+                </div>
+            </div>
+        </div>
+        
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+                 <a href="images/love/5_With_you.jpg" data-lightbox="image-5" data-title="I will be with you"><img src="thumbnails/love/5_With_you_sm.jpg" name="image-5" alt="With_you"></a>
+                <div class="caption">
+                    <h3>I will be with you</h3>
+                    <p>我們都要相信<br>希望會在盼望中萌芽<br>蛻變來自於獨處的自我覺察<br>雨過，總會天青</p>
+                    <p>而在雨停之前<br>我會為妳撐傘</p>
+                    <p>-獻給摯友 Valentina Chang-</p>
+                </div>
+            </div>
+        </div>
+          
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+             <div class="thumbnail">
+                <a href="images/love/4_The_same_goal.jpg" data-lightbox="image-4" data-title="The same goal"><img src="thumbnails/love/4_The_same_goal_sm.jpg" name="image-4" alt="The_same_goal"></a>
+                <div class="caption">
+                <h3>The same goal</h3>
+                <p>一生遇不到多少這樣的人<br>
+                遇到了一定要好好珍惜</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+             <a href="images/love/6_True_love.jpg" data-lightbox="image-6" data-title="True love"><img src="thumbnails/love/6_True_love_sm.jpg" name="image-6" alt="True_love"></a>            
+                <div class="caption">
+                <h3>True love</h3>
+                <p>真愛未曾平順</p>
+                </div>
+            </div>
+        </div>
+          
+        <div id="latest" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+               <a href="images/love/2_Happiness_hide.jpg" data-lightbox="image-2" data-title="Happiness Hide"><img src="thumbnails/love/2_Happiness_hide_sm.jpg" name="image-2" alt="Happiness_hide"></a>
+                <div class="caption">
+                <h3>Happiness Hide</h3>
+                <p>幸福其實一直環繞在我們身邊<br>
+                    只是我們從來不用心察覺</p>
+                </div>
+            </div>
+        </div>      
+    </div>
+
+    <div class="fix1">
+            <a href="#jumbo">Home</a>
+    </div>
+    <div class="fix2">
+            <a href="#favor">My Favorite</a>
+    </div>
+    <div class="fix3">
+            <a href="#abou">About Me</a>
+    </div>
+
+</div>
+
+
+
+
+       <script>
+
+    // Load the classic theme
+    Galleria.loadTheme('js/galleria.classic.min.js');
+
+    // Initialize Galleria
+    Galleria.run('#galleria');
+    
+    </script>
+
+
+<!-- jQuery -->
+<!-- 點選單 網頁會滾動到選擇的項目位置  程式開始-->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close ").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper ").toggleClass("active ");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle ").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper ").toggleClass("active ");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+<!-- 點選單 網頁會滾動到選擇的項目位置  程式結束-->
+
+<!-- 照片點選放大效果  jQuery也需要且要放在這個js前面(head有放)  外掛程式開始-->
+    <script src="js/lightbox.js" type="text/javascript"></script>
+<!-- 照片點選放大效果  jQuery也需要且要放在這個js前面(head有放)  外掛程式結束-->
+    
+</body>
 </html>
